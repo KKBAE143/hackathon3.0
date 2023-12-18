@@ -1,0 +1,27 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+.hospital {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.doctor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.doctor {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}

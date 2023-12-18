@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Schedule Checker</title>
+    <link rel="stylesheet" href="hr.css">
+</head>
+<body>
+    <div id="app">
+        <div class="hospital" v-for="hospital in hospitals">
+            <h2>{{ hospital.name }}</h2>
+            <div class="doctor-list">
+                <div class="doctor" v-for="doctor in hospital.doctors" @click="getDoctorSchedule(doctor)">
+                    {{ doctor.name }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./hr.js"></script>
+    
+</body>
+</html>

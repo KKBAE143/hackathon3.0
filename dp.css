@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hospital-list {
+    margin-top: 20px;
+}
+
+.hospital-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.rating {
+    margin-left: 20px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #ffc107;
+}
